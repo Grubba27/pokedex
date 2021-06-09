@@ -1,0 +1,53 @@
+.card-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
+.card-subtitle{
+  margin-bottom: 0;
+}
+
+.card-sprite {
+  width: 100px;
+  margin-bottom: 0;
+}
+
+span {
+  font-weight: 500;
+  font-size: 14px;
+}
+.card-content{
+  margin-bottom: 0;
+}
+.basic-abilities{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.basic-abilities-name{
+  margin-top: 5px;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+.actions{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.actions-toggle{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+

@@ -1,0 +1,23 @@
+<mat-card class="card-bg">
+  <mat-card-header>
+    <mat-card-title class="card-title">{{pokeData.name}}</mat-card-title>
+    <mat-card-subtitle class="card-subtitle">N° {{pokeData.number}} Type: {{pokeData.firstType}}</mat-card-subtitle>
+  </mat-card-header>
+  <img class="card-sprite" *ngIf="spriteToggle" mat-card-image src="{{pokeData.backSprite}}">
+  <img class="card-sprite" *ngIf="!spriteToggle" mat-card-image src="{{pokeData.frontSprite}}">
+  <mat-card-content class="card-content">
+    <span>Basic abilities</span>
+    <div class="basic-abilities">
+      <div  class="basic-abilities-name" *ngFor=" let ability of pokeData.abilities">
+        {{ability.ability.name}}
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="actions">
+    FRONT SPRITE
+    <mat-slide-toggle  class="actions-toggle" (change)="changeToggle()">
+    </mat-slide-toggle>
+    BACK SPRITE
+  </mat-card-actions>
+</mat-card>
+
